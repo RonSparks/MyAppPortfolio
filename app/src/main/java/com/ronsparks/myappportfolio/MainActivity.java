@@ -19,6 +19,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // did this to see if how on click event listeners worked
+        // need to do this for every listener - better to create
+        // a method called from onCreate to instantiate all of this.
+        Button button = (Button) findViewById(R.id.btnSpotifyStreamer);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Do something in response to button click
+                sendMessage (v);
+            }
+        });
     }
 
     @Override

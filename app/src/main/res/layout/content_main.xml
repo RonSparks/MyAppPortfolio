@@ -22,8 +22,7 @@
         android:minWidth="200dp"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/btnLibraryApp"
-        android:layout_alignStart="@+id/btnLibraryApp"
-        android:onClick="sendMessage"/>
+        android:layout_alignStart="@+id/btnLibraryApp" />
 
     <Button
         android:layout_width="wrap_content"
