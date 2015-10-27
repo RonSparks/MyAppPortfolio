@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:background="#39377b"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/btnSpotifyStreamer"
+        android:background="#0b7f18"
+        android:textColor="#fed130"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnLibraryApp"
+        android:layout_alignStart="@+id/btnLibraryApp"
+        android:onClick="sendMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/btnScoresApp"
+        android:layout_marginTop="38dp"
+        android:background="#0b7f18"
+        android:textColor="#fed130"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:layout_below="@+id/btnSpotifyStreamer"
+        android:layout_alignLeft="@+id/btnSpotifyStreamer"
+        android:layout_alignStart="@+id/btnSpotifyStreamer"
+        android:onClick="sendMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/btnLibraryApp"
+        android:background="#0b7f18"
+        android:textColor="#fed130"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:layout_below="@+id/btnScoresApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:onClick="sendMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build it Bigger"
+        android:id="@+id/btnBuildItBigger"
+        android:background="#0b7f18"
+        android:textColor="#fed130"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:layout_below="@+id/btnLibraryApp"
+        android:layout_alignRight="@+id/btnLibraryApp"
+        android:layout_alignEnd="@+id/btnLibraryApp"
+        android:layout_marginTop="36dp"
+        android:onClick="sendMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/btnXYZReader"
+        android:background="#0b7f18"
+        android:textColor="#fed130"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/btnBuildItBigger"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capstone: My Own App"
+        android:id="@+id/btnCapstone"
+        android:background="#F08C35"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:minWidth="200dp"
+        android:layout_below="@+id/btnXYZReader"
+        android:layout_alignLeft="@+id/btnXYZReader"
+        android:layout_alignStart="@+id/btnXYZReader"
+        android:layout_marginTop="45dp"
+        android:onClick="sendMessage"/>
+
+</RelativeLayout>
