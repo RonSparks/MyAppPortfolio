@@ -12,89 +12,55 @@
     tools:showIn="@layout/activity_main">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/buttonStyle"
         android:text="@string/button_label_spotify"
+        android:layout_marginTop="5dp"
         android:id="@+id/btnSpotifyStreamer"
-        android:background="@color/colorButtonBackground"
-        android:textColor="@color/colorButtonText"
-        android:padding="10dp"
-        android:minWidth="200dp"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/btnLibraryApp"
         android:layout_alignStart="@+id/btnLibraryApp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/buttonStyle"
         android:text="@string/button_label_scores"
         android:id="@+id/btnScoresApp"
-        android:layout_marginTop="38dp"
-        android:background="@color/colorButtonBackground"
-        android:textColor="@color/colorButtonText"
-        android:padding="10dp"
-        android:minWidth="200dp"
         android:layout_below="@+id/btnSpotifyStreamer"
         android:layout_alignLeft="@+id/btnSpotifyStreamer"
         android:layout_alignStart="@+id/btnSpotifyStreamer"
         android:onClick="sendMessage"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/buttonStyle"
         android:text="@string/button_label_library"
         android:id="@+id/btnLibraryApp"
-        android:background="@color/colorButtonBackground"
-        android:textColor="@color/colorButtonText"
-        android:padding="10dp"
-        android:minWidth="200dp"
         android:layout_below="@+id/btnScoresApp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
         android:onClick="sendMessage"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/buttonStyle"
         android:text="@string/button_label_buildbigger"
         android:id="@+id/btnBuildItBigger"
-        android:background="@color/colorButtonBackground"
-        android:textColor="@color/colorButtonText"
-        android:padding="10dp"
-        android:minWidth="200dp"
         android:layout_below="@+id/btnLibraryApp"
         android:layout_alignRight="@+id/btnLibraryApp"
         android:layout_alignEnd="@+id/btnLibraryApp"
-        android:layout_marginTop="36dp"
         android:onClick="sendMessage"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/buttonStyle"
         android:text="@string/button_label_xyzreader"
         android:id="@+id/btnXYZReader"
-        android:background="@color/colorButtonBackground"
-        android:textColor="@color/colorButtonText"
-        android:padding="10dp"
-        android:minWidth="200dp"
-        android:layout_marginTop="36dp"
         android:layout_below="@+id/btnBuildItBigger"
-        android:layout_centerHorizontal="true"
         android:onClick="sendMessage"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/buttonStyle"
         android:text="@string/button_label_capstone"
         android:id="@+id/btnCapstone"
         android:background="@color/colorButtonHighlight"
         android:textColor="@color/colorButtonHighlightText"
-        android:padding="10dp"
-        android:minWidth="200dp"
         android:layout_below="@+id/btnXYZReader"
         android:layout_alignLeft="@+id/btnXYZReader"
         android:layout_alignStart="@+id/btnXYZReader"
-        android:layout_marginTop="45dp"
         android:onClick="sendMessage"/>
 
 </RelativeLayout>
